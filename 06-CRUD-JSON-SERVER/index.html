@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD-JSON-SERVER</title>
+    <link rel="stylesheet" href="assets/CSS/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center text-white bg-primary p-4 rounded shadow">JAVASCRIPT CRUD USING SERVER</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mb-5">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary">
+                        <h2 class="card-title text-center text-white">APPLICATION FORM</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="myForm" autocomplete="off">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" required>
+                            </div>
+                            <div class="form-group my-3">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-outline-primary">SUBMIT</button>
+                            </div>   
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                <table class="table table-primary table-striped table-hover table-bordered border-primary table-responsive text-center shadow-sm">
+                    <tr>
+                        <th>ID</th>
+                        <th>NAME</th>
+                        <th>EMAIL</th>
+                        <th>ACTION</th>
+                    </tr>
+                    <tbody id="result"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/JS/bootstrap.bundle.js"></script>
+    <script src="assets/JS/script.js"></script>
+</body>
+</html>
